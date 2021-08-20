@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "antd/dist/antd.css";
+import Header from "./components/Header/Header";
+import Carousal from "./components/Carousal/Carousal";
+import Feature from "./components/Feature/Feature";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Header  */}
+      <Header />
+      {/* Carousal  */}
+      <Carousal />
+      {/* Feature product  */}
+      <Feature />
     </div>
   );
 }
 
 export default App;
+
+// 024172
+// 49C5DD
+// E3E3E3
+// F24C62
