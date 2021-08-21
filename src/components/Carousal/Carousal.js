@@ -10,7 +10,7 @@ const contentStyle = {
   lineHeight: "160px",
   textAlign: "center",
   background: "#364d79",
-  width: "100%",
+  width: "100vw",
 };
 
 const Carousal = () => {

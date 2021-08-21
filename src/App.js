@@ -1,19 +1,18 @@
 import "./App.css";
 import "antd/dist/antd.css";
-import Header from "./components/Header/Header";
-import Carousal from "./components/Carousal/Carousal";
-import Feature from "./components/Feature/Feature";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Homepage from "./Pages/Homepage";
+import ProductDetails from "./Pages/ProductDetails";
 
 function App() {
   return (
-    <div className="App">
-      {/* Header  */}
-      <Header />
-      {/* Carousal  */}
-      <Carousal />
-      {/* Feature product  */}
-      <Feature />
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact={true} component={Homepage} />
+
+        <Route path="/:id" exact={true} component={ProductDetails} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
