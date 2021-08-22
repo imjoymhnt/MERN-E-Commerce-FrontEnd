@@ -1,17 +1,13 @@
 import React from "react";
 import Carousal from "../components/Carousal/Carousal";
-import Feature from "../components/Feature/Feature";
-import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header";
+import Products from "../components/Products/Products";
 
 const Homepage = () => {
   return (
-    <>
-      <Header />
+    <div>
       <Carousal />
-      <Feature />
-      <Footer />
-    </>
+      <Products />
+    </div>
   );
 };
 

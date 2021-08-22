@@ -1,0 +1,24 @@
+.details {
+  margin-left: 2rem;
+}
+
+.product__image {
+  margin-left: 2rem;
+}
+
+#old__price {
+  color: #e54309;
+  text-decoration: line-through;
+}
+
+#new__price {
+  color: #3e7eff;
+}
+
+.add___to__cart {
+  margin-left: 1rem;
+}
+
+.buy__now {
+  margin-right: 1rem;
+}

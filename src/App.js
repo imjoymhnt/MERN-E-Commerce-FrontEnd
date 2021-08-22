@@ -1,24 +1,22 @@
 import "./App.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Details from "./components/ProductDetails/ProductDetails";
+import HomePage from "./Pages/HomePage";
 import "antd/dist/antd.css";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Homepage from "./Pages/Homepage";
-import ProductDetails from "./Pages/ProductDetails";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" exact={true} component={Homepage} />
-
-        <Route path="/:id" exact={true} component={ProductDetails} />
-      </Switch>
-    </BrowserRouter>
+    <div className="App">
+      <Header />
+      <Router>
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/product/:id" exact component={Details} />
+        </Switch>
+      </Router>
+    </div>
   );
 }
 
 export default App;
-
-// 024172
-// 49C5DD
-// E3E3E3
-// F24C62
